@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4C4120F-25FB-45D8-B5C7-A97566B38125}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>House_Appliance_Rental_System</RootNamespace>
+    <AssemblyName>House Appliance Rental System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAdmin.Designer.cs">
+      <DependentUpon>AddAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admins.Designer.cs">
+      <DependentUpon>Admins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appliances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appliances.Designer.cs">
+      <DependentUpon>Appliances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppliancesScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppliancesScreen.Designer.cs">
+      <DependentUpon>AppliancesScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplianceTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplianceTypes.Designer.cs">
+      <DependentUpon>ApplianceTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplianceTypesScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplianceTypesScreen.Designer.cs">
+      <DependentUpon>ApplianceTypesScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAppliance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAppliance.Designer.cs">
+      <DependentUpon>CreateAppliance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateRent.Designer.cs">
+      <DependentUpon>CreateRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Appliance_Rental_Management_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Home_Appliance_Rental_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCartLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyCartLists.Designer.cs">
+      <DependentUpon>MyCartLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyRentLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyRentLists.Designer.cs">
+      <DependentUpon>MyRentLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rents.Designer.cs">
+      <DependentUpon>Rents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAppliance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAppliance.Designer.cs">
+      <DependentUpon>UpdateAppliance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRent.Designer.cs">
+      <DependentUpon>UpdateRent.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAdmin.resx">
+      <DependentUpon>AddAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admins.resx">
+      <DependentUpon>Admins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appliances.resx">
+      <DependentUpon>Appliances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppliancesScreen.resx">
+      <DependentUpon>AppliancesScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplianceTypes.resx">
+      <DependentUpon>ApplianceTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplianceTypesScreen.resx">
+      <DependentUpon>ApplianceTypesScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAppliance.resx">
+      <DependentUpon>CreateAppliance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateRent.resx">
+      <DependentUpon>CreateRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCartLists.resx">
+      <DependentUpon>MyCartLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyRentLists.resx">
+      <DependentUpon>MyRentLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rents.resx">
+      <DependentUpon>Rents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAppliance.resx">
+      <DependentUpon>UpdateAppliance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRent.resx">
+      <DependentUpon>UpdateRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Home_Appliance_Rental_Management_SystemDataSet.xsc">
+      <DependentUpon>Home_Appliance_Rental_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Home_Appliance_Rental_Management_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Home_Appliance_Rental_Management_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Home_Appliance_Rental_Management_SystemDataSet.xss">
+      <DependentUpon>Home_Appliance_Rental_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FB_IMG_1642227875547.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Appliances.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
